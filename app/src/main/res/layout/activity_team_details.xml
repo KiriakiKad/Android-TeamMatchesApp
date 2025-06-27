@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".TeamDetails">
+
+    <ImageView
+        android:id="@+id/imageHome"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/textHome"
+        app:layout_constraintEnd_toEndOf="@+id/textHome"
+        app:layout_constraintStart_toStartOf="@+id/textHome"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageAway"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/textAway"
+        app:layout_constraintEnd_toEndOf="@+id/textAway"
+        app:layout_constraintStart_toStartOf="@+id/textAway"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/HomeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/HomeLayout"
+        app:layout_constraintStart_toStartOf="@+id/HomeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageHome" />
+
+    <TextView
+        android:id="@+id/textAway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/AwayLayout"
+        app:layout_constraintEnd_toEndOf="@+id/AwayLayout"
+        app:layout_constraintStart_toStartOf="@+id/AwayLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageAway" />
+
+    <LinearLayout
+        android:id="@+id/HomeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/AwayLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+    <LinearLayout
+        android:id="@+id/AwayLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HomeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textAway" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
