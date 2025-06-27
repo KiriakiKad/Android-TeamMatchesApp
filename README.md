@@ -49,7 +49,7 @@ The application communicates with backend services via HTTP requests. These serv
 ## ⚙️ How to Run
 1. Clone the repository:
    ```bash
-    git clone https://github.com/KiriakiKad/Android-TeamMatchesApp/AndroidApp.git
+    git clone https://github.com/KiriakiKad/Android-TeamMatchesApp.git
 2. Open the project in Android Studio (current version Electric Eel 2022.1.1)
 3. Ensure that network access is enabled by adding the following in AndroidManifest.xml:
    ```bash
